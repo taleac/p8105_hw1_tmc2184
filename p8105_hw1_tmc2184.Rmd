@@ -1,0 +1,59 @@
+---
+title: "p8105_hw1_tmc2184"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+################################
+# 09/10/2020
+# Talea Cornelius
+# Homework 1
+################################
+
+Problem .01: 
+-create a public GitHub repo + local R Project; we suggest naming this repo / directory   
+ p8105_hw1_YOURUNI
+-create a single .Rmd file named p8105_hw1_YOURUNI.Rmd that renders to github_document
+-submit a link to your repo via Courseworks
+
+https://github.com/taleac/p8105_hw1_tmc2184
+
+###############################
+
+Problem .02:
+
+This “problem” focuses on correct styling for your solutions to Problems 1 and 2. We will look for:
+
+-meaningful variable / object names
+-readable code (one command per line; adequate whitespace and indentation; etc)
+-clearly-written text to explain code and results
+-a lack of superfluous code (no unused variables are defined; no extra library calls; etc)
+
+###############################
+
+Problem 1:
+
+Create a data frame comprised of:
+
+a random sample of size 10 from a standard Normal distribution
+a logical vector indicating whether elements of the sample are greater than 0
+a character vector of length 10
+a factor vector of length 10, with 3 different factor “levels”
+
+Try to take the mean of each variable in your dataframe. What works and what doesn’t?
+
+In some cases, you can explicitly convert variables from one type to another. Write a code chunk that applies the as.numeric function to the logical, character, and factor variables (please show this chunk but not the output). What happens, and why? Does this help explain what happens when you try to take the mean?
+
+In a second code chunk:
+
+convert the logical vector to numeric, and multiply the random sample by the result
+convert the logical vector to a factor, and multiply the random sample by the result
+convert the logical vector to a factor and then convert the result to numeric, and multiply the random sample by the result
+
+###############################
+
+Problem 1:
+
