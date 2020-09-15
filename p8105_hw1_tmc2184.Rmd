@@ -134,13 +134,16 @@ data("penguins", package = "palmerpenguins")
 mean_flip <- mean(pull(penguins, flipper_length_mm), na.rm=TRUE)
 ```
 
-The dataset "penguins" includes `r ncol(penguins)` variables and `r nrow(penguins)` observations. Specific variable names are `r names(penguins[,1])`, `r names(penguins[,2])`, `r names(penguins[,3])`, `r names(penguins[,4])`, `r names(penguins[,5])`, `r names(penguins[,6])`, and `r names(penguins[,7])`.
+The dataset "penguins" includes `r ncol(penguins)` variables and `r nrow(penguins)` observations. Specific variable names are `r names(penguins[,1])`, `r names(penguins[,2])`, `r names(penguins[,3])`, `r names(penguins[,4])`, `r names(penguins[,5])`, `r names(penguins[,6])`, `r names(penguins[,7])`, and `r names(penguins[,8])`.
 
 `r names(penguins[,1])` is a factor with three levels: `r levels(penguins$species)`.
 `r names(penguins[,2])` is a factor with three levels: `r levels(penguins$island)`.
-`r names(penguins[,3])` is numeric, `r names(penguins[,4])` is numeric, and `r names(penguins[,5])` is numeric. 
-`r names(penguins[,6])` is a factor with two levels: `r levels(penguins$sex)`.
-Finally, `r names(penguins[,7])` is numeric.
+`r names(penguins[,3])` is numeric, with a mean of `r mean(penguins$bill_length_mm, na.rm=TRUE)`.
+`r names(penguins[,4])` is numeric, with a mean of `r mean(penguins$bill_depth_mm, na.rm=TRUE)`.
+`r names(penguins[,5])` is numeric, with a mean of `r mean(penguins$flipper_length_mm, na.rm=TRUE)`.
+`r names(penguins[,6])` is numeric, with a mean of `r mean(penguins$body_mass_g, na.rm=TRUE)`.
+`r names(penguins[,7])` is a factor with two levels: `r levels(penguins$sex)`.
+Finally, `r names(penguins[,8])` is numeric, with a mean of `r mean(penguins$year, na.rm=TRUE)`.
 
 The mean flipper length in millimeters is `r round(mean_flip, digits=2)`.
 
